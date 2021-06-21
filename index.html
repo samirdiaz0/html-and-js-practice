@@ -3,41 +3,41 @@
 <head>
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='shortcut icon' href='assets/AOE-II-Icon.png' type='image/png' />
+
     <link rel='preconnect' href='https://fonts.gstatic.com'>
-    <link href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet' sizes='64x64'>
+
     <link rel='stylesheet' href='css/index.css'>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
-        integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous'>
+    <link rel='stylesheet' href='bootstrap/css/bootstrap.min.css'>
+
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='bootstrap/js/bootstrap.min.js'></script>
     <script src='js/index.js'></script>
-    <script src='js/tableHref.js'></script>
-    <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'
-        integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'
-        crossorigin='anonymous'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'
-        integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q'
-        crossorigin='anonymous'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'
-        integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl'
-        crossorigin='anonymous'></script>
-    <title>Age of Empires | Civilizations</title>
+    <title>Age of Empires Civilizations</title>
 </head>
 
-<body>
+<body class='dark-layout text-light'>
     <div class='container'>
         <div class='row justify-content-center'>
-            <div class='col-10'>
-                <div class='d-flex align-items-center p-3 my-3 text-white bg-primary rounded box-shadow'>
-                    Civilizations List of Age Of Empires
+            <div class='col-xs-12 col-md-10'>
+                <div class='p-3 my-3 card rounded box-shadow'>
+                    <h5>
+                        Civilizations list of Age Of Empires II
+                    </h5>
                 </div>
-                <div class="table-responsive">
-                    <table class='table ' id='civilizationList'>
-                        <tr>
-                            <th scope='col'>Name</th>
-                            <th scope='col'>Army type</th>
-                            <th scope='col'>Team bonus</th>
-                        </tr>
+                <div class='table-responsive card p-3'>
+                    <table class='table table-hover table-dark table-striped'>
+                        <thead>
+                            <tr>
+                                <th width='20%'>Name</th>
+                                <th width='30%'>Army type</th>
+                                <th>Team bonus</th>
+                            </tr>
+                        </thead>
+                        <tbody id='civilizations'>
+                        </tbody>
                     </table>
                 </div>
             </div>

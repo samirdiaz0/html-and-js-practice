@@ -2,6 +2,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.cursor-pointer{
+.dark-layout {
+    background-color: #161d31;
+}
+
+.dark-layout .card {
+    background-color: #283046;
+}
+
+.table-row {
     cursor: pointer;
+}
+
+#civilizations {
+    font-size: 13px;
 }
